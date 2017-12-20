@@ -1,0 +1,12 @@
+[REPORTS]
+msg-template="{msg_id}({symbol}) - {obj} Line# {line}: {msg}"
+reports=no
+
+[MESSAGES CONTROL]
+# Use this to remove uninteresting (or currently
+# less important) warnings and errors.
+disable=C0305
+
+[DESIGN]
+# Maximum number of arguments for function / method
+max-args=5

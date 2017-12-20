@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171219 12:56:58.303" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Python27\Projects\Bank\test\bdd\robot" id="s1" name="Robot">
+<suite source="C:\Python27\Projects\Bank\test\bdd\robot\tests" id="s1-s1" name="Tests">
+<suite source="C:\Python27\Projects\Bank\test\bdd\robot\tests\bank.txt" id="s1-s1-s1" name="Bank">
+<test id="s1-s1-s1-t1" name="Retrieve customer balance">
+<kw name="Given I create the account 1111 with balance 50" library="steps">
+<kw name="Create Account" library="robotLibrary">
+<arguments>
+<arg>${account_number}</arg>
+<arg>${balance}</arg>
+</arguments>
+<status status="PASS" endtime="20171219 12:57:00.217" starttime="20171219 12:57:00.217"></status>
+</kw>
+<status status="PASS" endtime="20171219 12:57:00.217" starttime="20171219 12:57:00.216"></status>
+</kw>
+<kw name="When I retrieve the account 1111" library="steps">
+<kw name="Visit Homepage" library="robotLibrary">
+<status status="PASS" endtime="20171219 12:57:00.224" starttime="20171219 12:57:00.218"></status>
+</kw>
+<kw name="Enter Account" library="robotLibrary">
+<arguments>
+<arg>${account_number}</arg>
+</arguments>
+<status status="PASS" endtime="20171219 12:57:00.227" starttime="20171219 12:57:00.225"></status>
+</kw>
+<status status="PASS" endtime="20171219 12:57:00.227" starttime="20171219 12:57:00.218"></status>
+</kw>
+<kw name="And the balance should be 50" library="steps">
+<kw name="Get Balance" library="robotLibrary">
+<arguments>
+<arg>${balance}</arg>
+</arguments>
+<status status="PASS" endtime="20171219 12:57:00.229" starttime="20171219 12:57:00.228"></status>
+</kw>
+<status status="PASS" endtime="20171219 12:57:00.229" starttime="20171219 12:57:00.228"></status>
+</kw>
+<status status="PASS" endtime="20171219 12:57:00.230" critical="yes" starttime="20171219 12:57:00.215"></status>
+</test>
+<doc>Example Robot tests for
+Bank application</doc>
+<status status="PASS" endtime="20171219 12:57:00.232" starttime="20171219 12:56:58.334"></status>
+</suite>
+<status status="PASS" endtime="20171219 12:57:00.233" starttime="20171219 12:56:58.332"></status>
+</suite>
+<status status="PASS" endtime="20171219 12:57:00.236" starttime="20171219 12:56:58.309"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Robot" pass="1">Robot</stat>
+<stat fail="0" id="s1-s1" name="Tests" pass="1">Robot.Tests</stat>
+<stat fail="0" id="s1-s1-s1" name="Bank" pass="1">Robot.Tests.Bank</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
